@@ -1,261 +1,326 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="hi" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RichIND - Skill to Success | Guided by Abhishek Kumar</title>
+    <title>RichIND Official Presentation | Learn & Earn Digital Skills</title>
+    
+    <!-- ========================================== -->
+    <!-- META PIXEL CODE (ID: 1012266775189437)     -->
+    <!-- ========================================== -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      
+      // Initialize Meta Pixel
+      fbq('init', '1012266775189437');
+      // Track PageView Event on page load
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id=1012266775189437&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- ========================================== -->
+    <!-- END META PIXEL CODE                        -->
+    <!-- ========================================== -->
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Meta Pixel Code -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)n.push(arguments);n.ready=!true;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1012266775189437');
-    fbq('track', 'PageView');
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#FFD700',
+                            green: '#25D366',
+                            greenHover: '#1EBE5D',
+                            darkBg: '#090D16',
+                            cardBg: '#111827',
+                            accent: '#3B82F6'
+                        }
+                    },
+                    animation: {
+                        'pulse-glow': 'pulseGlow 2s infinite',
+                        'ping-slow': 'ping 2s cubic-bezier(0, 0, 0.2, 1) infinite',
+                    },
+                    keyframes: {
+                        pulseGlow: {
+                            '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 15px rgba(37, 211, 102, 0.6)' },
+                            '50%': { transform: 'scale(1.02)', boxShadow: '0 0 28px rgba(37, 211, 102, 0.9)' },
+                        }
+                    }
+                }
+            }
+        }
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1012266775189437&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #090D16;
+            color: #F3F4F6;
+        }
+        .pulse-btn {
+            animation: pulseGlow 2s infinite;
+        }
+        .responsive-video {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 1rem;
+        }
+        .responsive-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
-<body class="bg-gray-950 text-white font-sans antialiased selection:bg-amber-500 selection:text-black">
+<body class="min-h-screen pb-24 antialiased selection:bg-brand-green selection:text-black">
 
-    <!-- Top Alert Banner (Zero Investment / Free Filter Warning) -->
-    <div class="bg-red-600 text-white text-center text-xs md:text-sm font-bold py-2.5 px-4 shadow-lg sticky top-0 z-50">
-        <i class="fa-solid fa-triangle-exclamation mr-1.5 animate-pulse"></i> 
-        WARNING: Ye ek PAID Professional Skill Program hai. Zero Investment ya Free scheme dhoondhne waale is page ko abhi close kar dein.
+    <!-- QUICK CONFIGURATION TOOLBAR -->
+    <div id="configBar" class="bg-slate-900 border-b border-amber-500/30 p-3 text-xs sm:text-sm text-slate-300">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
+            <div class="flex items-center gap-2 font-bold text-amber-400">
+                <i class="fas fa-sliders-h"></i>
+                <span>Quick Customizer (Configure Page):</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-2 w-full md:w-auto">
+                <input type="text" id="phoneInput" placeholder="WhatsApp Number (e.g., 919876543210)" value="919876543210" 
+                       class="bg-slate-950 border border-slate-700 text-white rounded px-3 py-1 text-xs focus:outline-none focus:border-brand-green flex-1 md:w-56">
+                <input type="text" id="videoInput" placeholder="YouTube Embed URL" value="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&autoplay=0" 
+                       class="bg-slate-950 border border-slate-700 text-white rounded px-3 py-1 text-xs focus:outline-none focus:border-brand-green flex-1 md:w-64">
+                <button onclick="applyConfiguration()" class="bg-amber-500 hover:bg-amber-600 text-black font-extrabold px-3 py-1 rounded text-xs transition">
+                    Apply Changes
+                </button>
+            </div>
+        </div>
     </div>
 
-    <!-- Main Container -->
-    <div class="max-w-3xl mx-auto px-4 py-6">
+    <!-- Top Urgency Banner -->
+    <div class="bg-red-600/90 backdrop-blur-md text-white text-xs sm:text-sm font-bold text-center py-2 px-4 sticky top-0 z-40 flex justify-center items-center gap-2 border-b border-red-500 shadow-lg">
+        <span class="relative flex h-2.5 w-2.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-yellow-300"></span>
+        </span>
+        <span>🚨 ATTENTION: NO FREE SCHEME | PAID SKILL TRAINING (LIMITED SEATS!)</span>
+    </div>
 
-        <!-- Official Logo & Mentor Branding Header -->
-        <header class="text-center space-y-4 my-4">
-            <div class="flex justify-center items-center py-2">
-                <img src="https://richind.org/user_panel/assets/images/logo.png" alt="RichIND Logo" class="h-12 md:h-16 object-contain bg-white/10 p-2 rounded-xl border border-white/10 shadow-lg">
-            </div>
+    <header class="max-w-3xl mx-auto text-center px-4 pt-8 pb-4">
+        <div class="inline-flex items-center gap-2 bg-amber-400/10 border border-amber-400/30 text-amber-400 font-extrabold text-xs tracking-wider uppercase px-4 py-1.5 rounded-full mb-4">
+            <i class="fas fa-crown"></i> Official Presentation 2026
+        </div>
+        
+        <h1 class="text-2xl sm:text-4xl md:text-5xl font-black tracking-tight text-white leading-tight mb-3">
+            Mobile Se Skill Seekho & Monthly <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-500">₹15,000 - ₹30,000</span> Earn Karo! 📱✨
+        </h1>
+        
+        <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto font-medium">
+            Ghar baithe apne smartphone ka sahi use karke daily income generate karein. Pehle niche di gayi 10-minute video ko poora dekhein!
+        </p>
+    </header>
 
-            <div class="inline-flex items-center space-x-2 bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">
-                <i class="fa-solid fa-user-check"></i> Mentored by Abhishek Kumar (RichIND Partner)
-            </div>
-
-            <h1 class="text-2xl md:text-4xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-yellow-500">
-                Turn Your Skills Into Freelance Income & Digital Growth!
-            </h1>
-            <p class="text-gray-400 text-sm md:text-base max-w-xl mx-auto">
-                Join RichIND, get matched with real freelance opportunities, work on remote-friendly projects, and earn on your own schedule.
+    <main class="max-w-3xl mx-auto px-4">
+        
+        <!-- Step 1 Notice Callout -->
+        <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-amber-500/40 rounded-xl p-3 mb-4 text-center shadow-md">
+            <p class="text-amber-300 font-extrabold text-sm sm:text-base flex items-center justify-center gap-2">
+                <span>👇 STEP 1: Full Presentation Video Dekhna Compulsory Hai!</span>
             </p>
-        </header>
-
-        <!-- Trust Badges & Platform Stats -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 my-6 text-center">
-            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl">
-                <div class="text-amber-400 font-extrabold text-lg">4.9/5 ⭐</div>
-                <div class="text-gray-400 text-[11px]">Platform Rating</div>
-            </div>
-            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl">
-                <div class="text-amber-400 font-extrabold text-lg">300K+</div>
-                <div class="text-gray-400 text-[11px]">Active Students</div>
-            </div>
-            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl">
-                <div class="text-amber-400 font-extrabold text-lg">200M+</div>
-                <div class="text-gray-400 text-[11px]">Community Earning</div>
-            </div>
-            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl">
-                <div class="text-amber-400 font-extrabold text-lg">98% 🚀</div>
-                <div class="text-gray-400 text-[11px]">Success Rate</div>
-            </div>
         </div>
 
-        <!-- Video Section (Embedded Inline Player) -->
-        <div class="bg-gray-900 border border-gray-800 rounded-2xl p-2 shadow-2xl my-6">
-            <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-black">
-                <iframe 
-                    class="w-full h-full" 
-                    src="https://www.youtube-nocookie.com/embed/muJNzw4sANo?rel=0&modestbranding=1&playsinline=1&controls=1" 
-                    title="RichIND Presentation" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
+        <!-- Video Presentation Player Box -->
+        <div class="bg-slate-900/80 p-2 sm:p-3 rounded-2xl border border-slate-800 shadow-2xl mb-6 backdrop-blur-sm">
+            <div class="responsive-video bg-black">
+                <iframe id="mainVideoPlayer" 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&autoplay=0" 
+                        title="RichIND Presentation Video" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
                 </iframe>
             </div>
-            <p class="text-center text-xs text-amber-400 mt-2 font-medium">
-                <i class="fa-solid fa-play-circle mr-1"></i> Pehle ye 10-Minute ki Presentation Video poori dhyan se dekhein!
+        </div>
+
+        <!-- Step 2 Notice & WhatsApp CTA Box -->
+        <div class="text-center bg-slate-900 border border-emerald-500/40 rounded-2xl p-6 shadow-2xl mb-10 relative overflow-hidden">
+            <div class="absolute -right-10 -top-10 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl"></div>
+            
+            <h2 class="text-lg sm:text-2xl font-black text-white mb-2 leading-snug">
+                👇 STEP 2: Video Dekh Li? Ab Next Steps Ke Liye WhatsApp Par Message Karein!
+            </h2>
+            <p class="text-slate-400 text-xs sm:text-sm mb-6 max-w-md mx-auto">
+                WhatsApp par humse connect karke apni seat reserve karein aur training batch start karein.
             </p>
-        </div>
 
-        <!-- Direct WhatsApp Action CTA 1 -->
-        <div class="text-center my-8">
-            <a href="https://wa.me/917654802940?text=Hi%20Abhishek,%20maine%20RichIND%20presentation%20video%20dekh%20li%20hai.%20Mujhe%20Expert%20Package%20se%20start%20karna%20hai." 
+            <!-- Main Pulsing WhatsApp CTA Button -->
+            <a id="mainCtaBtn" 
+               href="#" 
                target="_blank" 
-               onclick="fbq('track', 'Lead');"
-               class="inline-flex items-center justify-center w-full md:w-auto px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-extrabold text-lg rounded-2xl shadow-lg shadow-green-500/25 transform hover:-translate-y-1 transition duration-200">
-                <i class="fa-brands fa-whatsapp text-2xl mr-3"></i>
-                JOIN AS FREELANCER & START ON WHATSAPP ➔
+               onclick="trackWhatsAppLeadEvent('Main CTA')"
+               class="pulse-btn inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-black text-lg sm:text-xl py-4 px-8 rounded-xl transition-all duration-300 shadow-xl border border-emerald-400/30 active:scale-95">
+                <i class="fab fa-whatsapp text-3xl"></i>
+                <span id="ctaText">WATCH VIDEO & CHAT ON WHATSAPP</span>
             </a>
-            <p class="text-xs text-gray-500 mt-2">Flexible remote opportunities & timely payouts with zero hassle.</p>
-        </div>
-
-        <!-- Community Join Cards Section -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
-            <a href="https://whatsapp.com/channel/0029VbBlxDxA89Md3m1p9J0Q" target="_blank" class="block text-decoration-none">
-                <div class="bg-gradient-to-r from-green-900/60 to-emerald-900/80 border border-green-500/30 rounded-2xl p-4 flex items-center space-x-3 hover:border-green-400 transition shadow-lg">
-                    <div class="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0">
-                        <i class="fa-brands fa-whatsapp text-green-400 text-xl"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-white font-bold text-sm">Richind Beginner's Community 🗣️</h4>
-                        <p class="text-gray-300 text-xs">Join WhatsApp Channel & grow with us</p>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://t.me/richindachiever" target="_blank" class="block text-decoration-none">
-                <div class="bg-gradient-to-r from-sky-900/60 to-blue-900/80 border border-sky-500/30 rounded-2xl p-4 flex items-center space-x-3 hover:border-sky-400 transition shadow-lg">
-                    <div class="w-10 h-10 bg-sky-500/20 rounded-full flex items-center justify-center flex-shrink-0">
-                        <i class="fa-brands fa-telegram text-sky-400 text-xl"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-white font-bold text-sm">Telegram Official Group ✈️</h4>
-                        <p class="text-gray-300 text-xs">Stay updated & connected</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- Featured Package Section: EXPERT PACKAGE (BEST RECOMMENDED) -->
-        <div class="my-10 bg-gradient-to-b from-amber-950/40 to-gray-900 border-2 border-amber-500/60 rounded-3xl p-6 relative shadow-2xl shadow-amber-500/20">
-            <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-amber-500 to-yellow-600 text-black text-xs font-black px-4 py-1 rounded-full uppercase tracking-widest shadow-md">
-                🔥 BEST RECOMMENDED PACKAGE
-            </div>
-
-            <div class="mt-2 mb-4 overflow-hidden rounded-2xl border border-amber-500/30 shadow-lg">
-                <img src="https://richind.org/frontend/assets/images/13869612131789934181.png" alt="Expert Package" class="w-full h-auto object-cover">
-            </div>
             
-            <div class="text-center space-y-2">
-                <h2 class="text-2xl font-bold text-amber-400">EXPERT PACKAGE</h2>
-                <p class="text-gray-300 text-sm">World's Best Courses & Complete Freelance Matching</p>
-                <div class="text-3xl font-extrabold text-white pt-1">
-                    ₹1,149 <span class="text-sm text-gray-400 font-normal line-through">₹2,999</span>
-                </div>
-                <div class="inline-block bg-amber-500/20 text-amber-300 border border-amber-500/40 px-3 py-1 rounded-lg text-xs font-bold">
-                    🚀 Daily Potential Earning: ₹800 se ₹1,600
-                </div>
-            </div>
-
-            <!-- Included Courses List -->
-            <div class="mt-6 bg-black/50 p-4 rounded-xl border border-white/10">
-                <h4 class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-3"><i class="fa-solid fa-graduation-cap mr-1"></i> Included World-Class Courses:</h4>
-                <div class="grid grid-cols-2 gap-2 text-xs text-gray-300">
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> Lead Generation</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> Instagram Mastery</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> Canva with A.I</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> Youtube Success</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> English Speaking</div>
-                    <div class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> Step to Success</div>
-                </div>
-            </div>
-
-            <ul class="mt-4 space-y-2.5 text-sm text-gray-300">
-                <li class="flex items-start"><i class="fa-solid fa-circle-check text-amber-400 mt-1 mr-3"></i> <span><strong>Structured Learning:</strong> Step-by-step curriculum by industry mentors</span></li>
-                <li class="flex items-start"><i class="fa-solid fa-circle-check text-amber-400 mt-1 mr-3"></i> <span><strong>Live Doubt Sessions:</strong> Never learn alone with supportive community</span></li>
-                <li class="flex items-start"><i class="fa-solid fa-circle-check text-amber-400 mt-1 mr-3"></i> <span><strong>Abhishek Kumar Mentorship:</strong> Direct Priority Support & Strategy Access</span></li>
-            </ul>
-
-            <div class="mt-6 text-center">
-                <a href="https://wa.me/917654802940?text=Hi%20Abhishek,%20mujhe%20RichIND%20Expert%20Package%20(Rs.1149)%20buy%20karna%20hai." 
-                   target="_blank"
-                   onclick="fbq('track', 'AddToCart');"
-                   class="block w-full py-4 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-black font-extrabold text-base rounded-xl transition duration-200 shadow-xl">
-                    ENROLL IN EXPERT PACKAGE VIA WHATSAPP ➔
-                </a>
+            <div class="mt-4 flex flex-wrap items-center justify-center gap-4 text-xs text-slate-400">
+                <span class="flex items-center gap-1"><i class="fas fa-bolt text-amber-400"></i> Instant Auto Reply</span>
+                <span class="flex items-center gap-1"><i class="fas fa-user-shield text-emerald-400"></i> Direct Abhishek's Guidance</span>
             </div>
         </div>
 
-        <!-- Lower Alternative Packages (Intermediate & Starter) -->
-        <div class="my-8">
-            <h3 class="text-center text-lg font-bold text-gray-300 mb-6">Aap In Starter Packages Se Bhi Start Kar Sakte Hain:</h3>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
-                <!-- Intermediate Package -->
-                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-5 space-y-3 hover:border-gray-700 transition flex flex-col justify-between">
-                    <div>
-                        <div class="overflow-hidden rounded-xl mb-3 border border-gray-800">
-                            <img src="https://richind.org/frontend/assets/images/18998850091789934163.png" alt="Intermediate Package" class="w-full h-auto object-cover">
-                        </div>
-                        <h4 class="text-lg font-bold text-white">INTERMEDIATE PACKAGE</h4>
-                        <p class="text-xs text-gray-400 mt-1">Canva, Video Editing & Growth Foundations</p>
-                        <div class="text-xl font-bold text-amber-400 mt-2">
-                            ₹560 <span class="text-xs text-gray-500 line-through">₹999</span>
-                        </div>
-                        <div class="mt-2 text-xs font-semibold text-green-400 bg-green-500/10 border border-green-500/20 px-2.5 py-1 rounded-md inline-block">
-                            📈 Daily Earning: ₹400 - ₹800
-                        </div>
-                    </div>
-                    <a href="https://wa.me/917654802940?text=Hi%20Abhishek,%20mujhe%20Intermediate%20Package%20(Rs.560)%20se%20start%20karna%20hai." 
-                       target="_blank"
-                       class="block text-center text-xs bg-gray-800 hover:bg-gray-700 text-amber-400 font-bold py-3 rounded-xl border border-amber-500/20 mt-4">
-                        Select Intermediate Package ➔
-                    </a>
+        <!-- Feature / Trust Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+            <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-2xl text-center hover:border-slate-700 transition">
+                <div class="w-12 h-12 bg-amber-400/10 text-amber-400 rounded-xl flex items-center justify-center mx-auto text-2xl mb-3">
+                    <i class="fas fa-mobile-alt"></i>
                 </div>
+                <h3 class="font-bold text-base text-white mb-1">100% Mobile Based</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">Laptop ki koi requirement nahi. Saara kaam apne phone se 2-3 ghante me karein.</p>
+            </div>
 
-                <!-- Starter Package -->
-                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-5 space-y-3 hover:border-gray-700 transition flex flex-col justify-between">
-                    <div>
-                        <div class="overflow-hidden rounded-xl mb-3 border border-gray-800">
-                            <img src="https://richind.org/frontend/assets/images/616392831789934142.png" alt="Starter Package" class="w-full h-auto object-cover">
-                        </div>
-                        <h4 class="text-lg font-bold text-white">STARTER PACKAGE</h4>
-                        <p class="text-xs text-gray-400 mt-1">Basic Digital Skills & Affiliate Foundations</p>
-                        <div class="text-xl font-bold text-amber-400 mt-2">
-                            ₹260 <span class="text-xs text-gray-500 line-through">₹499</span>
-                        </div>
-                        <div class="mt-2 text-xs font-semibold text-green-400 bg-green-500/10 border border-green-500/20 px-2.5 py-1 rounded-md inline-block">
-                            📈 Daily Earning: ₹200 - ₹400
-                        </div>
-                    </div>
-                    <a href="https://wa.me/917654802940?text=Hi%20Abhishek,%20mujhe%20Starter%20Package%20(Rs.260)%20se%20start%20karna%20hai." 
-                       target="_blank"
-                       class="block text-center text-xs bg-gray-800 hover:bg-gray-700 text-amber-400 font-bold py-3 rounded-xl border border-amber-500/20 mt-4">
-                        Select Starter Package ➔
-                    </a>
+            <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-2xl text-center hover:border-slate-700 transition">
+                <div class="w-12 h-12 bg-emerald-400/10 text-emerald-400 rounded-xl flex items-center justify-center mx-auto text-2xl mb-3">
+                    <i class="fas fa-wallet"></i>
                 </div>
+                <h3 class="font-bold text-base text-white mb-1">Daily Payouts & Support</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">Aapki mehnat ka reward aapke bank account me. Continuous mentorship support.</p>
+            </div>
 
+            <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-2xl text-center hover:border-slate-700 transition">
+                <div class="w-12 h-12 bg-blue-400/10 text-blue-400 rounded-xl flex items-center justify-center mx-auto text-2xl mb-3">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 class="font-bold text-base text-white mb-1">Step-By-Step Guidance</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">Beginner-friendly video modules aur daily live training sessions se sab sikhaaya jayega.</p>
             </div>
         </div>
 
         <!-- FAQ Section -->
-        <div class="my-10 space-y-4">
-            <h3 class="text-xl font-bold text-center text-white mb-4">Frequently Asked Questions</h3>
-            
-            <div class="bg-gray-900 p-4 rounded-xl border border-gray-800 space-y-1">
-                <p class="font-bold text-sm text-amber-400">Q: Kya ye zero investment/free kaam hai?</p>
-                <p class="text-xs text-gray-300">Nahi, ye ek professional skill-learning aur freelance matching platform hai. Courses seekhne aur account active karne ke liye package buy karna mandatory hai.</p>
-            </div>
+        <section class="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 mb-10">
+            <h2 class="text-xl font-black text-center text-white mb-6 flex items-center justify-center gap-2">
+                <i class="fas fa-question-circle text-amber-400"></i> Frequently Asked Questions (FAQ)
+            </h2>
 
-            <div class="bg-gray-900 p-4 rounded-xl border border-gray-800 space-y-1">
-                <p class="font-bold text-sm text-amber-400">Q: Support kaise milega?</p>
-                <p class="text-xs text-gray-300">Enroll karne ke baad aapko live doubt-solving sessions, peer discussions aur Abhishek Kumar ki direct mentorship milti hai.</p>
+            <div class="space-y-3" id="faqAccordion">
+                <!-- FAQ Item 1 -->
+                <div class="border border-slate-800 rounded-xl overflow-hidden bg-slate-900">
+                    <button onclick="toggleFaq(1)" class="w-full flex justify-between items-center p-4 text-left font-bold text-sm text-slate-200 hover:text-white">
+                        <span>1. Kya is kaam ke liye Laptop ya Computer chahiye?</span>
+                        <i id="faqIcon-1" class="fas fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div id="faqAnswer-1" class="hidden p-4 pt-0 text-xs text-slate-400 border-t border-slate-800/50 leading-relaxed">
+                        Nahi! Is kaam ko aap 100% apne Smartphone se kar sakte hain. Aapko sirf ek active internet connection aur din ke 2-3 ghante ki zaroorat hai.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-slate-800 rounded-xl overflow-hidden bg-slate-900">
+                    <button onclick="toggleFaq(2)" class="w-full flex justify-between items-center p-4 text-left font-bold text-sm text-slate-200 hover:text-white">
+                        <span>2. Isme Age limit kya hai? Kya students kar sakte hain?</span>
+                        <i id="faqIcon-2" class="fas fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div id="faqAnswer-2" class="hidden p-4 pt-0 text-xs text-slate-400 border-t border-slate-800/50 leading-relaxed">
+                        Aapki age 18+ honi chahiye. Agar aap Student, Job Person, ya Housewife hain, toh aap ise part-time me aasaani se kar sakte hain.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-slate-800 rounded-xl overflow-hidden bg-slate-900">
+                    <button onclick="toggleFaq(3)" class="w-full flex justify-between items-center p-4 text-left font-bold text-sm text-slate-200 hover:text-white">
+                        <span>3. Mujhe digital marketing/sales ka koi experience nahi hai, kya main kar paunga?</span>
+                        <i id="faqIcon-3" class="fas fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div id="faqAnswer-3" class="hidden p-4 pt-0 text-xs text-slate-400 border-t border-slate-800/50 leading-relaxed">
+                        Bilkul! Hum aapko ZERO se lekar ADVANCED level tak step-by-step training dete hain. Aapko har ek cheez sikhayi jayegi.
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
         <!-- Footer -->
-        <footer class="text-center text-xs text-gray-600 border-t border-gray-900 pt-6 mt-12 space-y-2">
-            <p>© 2026 RichIND Authorized Affiliate Partner (Guided by Abhishek Kumar). All Rights Reserved.</p>
-            <p class="text-[10px]">Founder & CEO: Yash Kulshrestha | Independent affiliate website.</p>
+        <footer class="text-center text-slate-500 text-xs pb-6">
+            <p class="mb-2">Disclaimer: This site is not a part of Meta / Facebook website or Meta Inc. Additionally, this site is NOT endorsed by Facebook in any way.</p>
+            <p>© 2026 Abhishek Digital Skill Hub. All Rights Reserved.</p>
         </footer>
 
+    </main>
+
+    <!-- Mobile Sticky Floating Bottom CTA Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-slate-950/95 backdrop-blur-lg border-t border-slate-800 p-3 z-50 sm:hidden">
+        <a id="floatingCtaBtn" 
+           href="#" 
+           target="_blank" 
+           onclick="trackWhatsAppLeadEvent('Floating CTA')"
+           class="flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-500 to-green-600 text-white font-extrabold text-base py-3 px-4 rounded-xl shadow-lg active:scale-95 transition-transform">
+            <i class="fab fa-whatsapp text-2xl"></i>
+            <span>💬 DIRECT WHATSAPP PAR BAAT KAREIN</span>
+        </a>
     </div>
 
-</body>
-</html>
+    <script>
+        // Configuration Variables
+        let userPhone = "919876543210";
+        let videoUrl = "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&autoplay=0";
+        const defaultMessage = encodeURIComponent("Hi Abhishek, maine presentation video dekh li hai. Mujhe next step bataiye!");
+
+        // Update WhatsApp links across the page
+        function updateWhatsAppLinks() {
+            const waLink = `https://wa.me/${userPhone}?text=${defaultMessage}`;
+            document.getElementById('mainCtaBtn').href = waLink;
+            document.getElementById('floatingCtaBtn').href = waLink;
+        }
+
+        // Meta Pixel Event Tracking function on CTA click
+        function trackWhatsAppLeadEvent(source) {
+            console.log(`Tracking Lead Event via Pixel for: ${source}`);
+            if (typeof fbq === 'function') {
+                // Fire 'Lead' event to Meta Pixel
+                fbq('track', 'Lead', {
+                    content_name: 'RichIND Presentation Lead',
+                    content_category: 'WhatsApp Click',
+                    cta_source: source
+                });
+                // Also fire 'Contact' event for backup optimization
+                fbq('track', 'Contact');
+            }
+        }
+
+        // Apply toolbar customization
+        function applyConfiguration() {
+            const rawPhone = document.getElementById('phoneInput').value.trim();
+            const rawVideo = document.getElementById('videoInput').value.trim();
+
+            if (rawPhone) {
+                userPhone = rawPhone.replace(/\D/g, ''); // strip non-digits
+            }
+            if (rawVideo) {
+                videoUrl = rawVideo;
+                document.getElementById('mainVideoPlayer').src = videoUrl;
+            }
+
+            updateWhatsAppLinks();
+            showNotification("Configuration Updated & Pixel Event Active!");
+        }
+
+        // FAQ Toggle Logic
+        function toggleFaq(id) {
+            const answer = document.getElementById(`faqAnswer-${id}`);
+            const icon = document.getElementById(`faqIcon-${id}`);
+            
