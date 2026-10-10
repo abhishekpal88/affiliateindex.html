@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RichIND - Skill to Success | Guided by Abhishek Kumar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)n.push(arguments);n.ready=!true;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1012266775189437');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1012266775189437&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body class="bg-gray-950 text-white font-sans antialiased selection:bg-amber-500 selection:text-black">
+
+    <!-- Top Alert Banner (Zero Investment / Free Filter Warning) -->
+    <div class="bg-red-600 text-white text-center text-xs md:text-sm font-bold py-2.5 px-4 shadow-lg sticky top-0 z-50">
+        <i class="fa-solid fa-triangle-exclamation mr-1.5 animate-pulse"></i> 
+        WARNING: Ye ek PAID Professional Skill Program hai. Zero Investment ya Free scheme dhoondhne waale is page ko abhi close kar dein.
+    </div>
+
+    <!-- Main Container -->
+    <div class="max-w-3xl mx-auto px-4 py-6">
+
+        <!-- Official Logo & Mentor Branding Header -->
+        <header class="text-center space-y-4 my-4">
+            <div class="flex justify-center items-center py-2">
+                <img src="https://richind.org/user_panel/assets/images/logo.png" alt="RichIND Logo" class="h-12 md:h-16 object-contain bg-white/10 p-2 rounded-xl border border-white/10 shadow-lg">
+            </div>
+
+            <div class="inline-flex items-center space-x-2 bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">
+                <i class="fa-solid fa-user-check"></i> Mentored by Abhishek Kumar (RichIND Partner)
+            </div>
+
+            <h1 class="text-2xl md:text-4xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-yellow-500">
+                Turn Your Skills Into Freelance Income & Digital Growth!
+            </h1>
+            <p class="text-gray-400 text-sm md:text-base max-w-xl mx-auto">
+                Join RichIND, get matched with real freelance opportunities, work on remote-friendly projects, and earn on your own schedule.
+            </p>
+        </header>
+
+        <!-- Trust Badges & Platform Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 my-6 text-center">
+            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl">
+                <div class="text-amber-400 font-extrabold text-lg">4.9/5 ⭐</div>
+                <div class="text-gray-400 text-[11px]">Platform Rating</div>
+            </div>
+            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl">
+                <div class="text-amber-400 font-extrabold text-lg">300K+</div>
+                <div class="text-gray-400 text-[11px]">Active Students</div>
+            </div>
+            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl">
+                <div class="text-amber-400 font-extrabold text-lg">200M+</div>
+                <div class="text-gray-400 text-[11px]">Community Earning</div>
+            </div>
+            <div class="bg-gray-900 border border-gray-800 p-3 rounded-xl">
+                <div class="text-amber-400 font-extrabold text-lg">98% 🚀</div>
+                <div class="text-gray-400 text-[11px]">Success Rate</div>
+            </div>
+        </div>
+
+        <!-- Video Section (Embedded Inline Player) -->
+        <div class="bg-gray-900 border border-gray-800 rounded-2xl p-2 shadow-2xl my-6">
+            <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-black">
+                <iframe 
+                    class="w-full h-full" 
+                    src="https://www.youtube-nocookie.com/embed/muJNzw4sANo?rel=0&modestbranding=1&playsinline=1&controls=1" 
+                    title="RichIND Presentation" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p class="text-center text-xs text-amber-400 mt-2 font-medium">
+                <i class="fa-solid fa-play-circle mr-1"></i> Pehle ye 10-Minute ki Presentation Video poori dhyan se dekhein!
+            </p>
+        </div>
+
+        <!-- Direct WhatsApp Action CTA 1 -->
+        <div class="text-center my-8">
+            <a href="https://wa.me/917654802940?text=Hi%20Abhishek,%20maine%20RichIND%20presentation%20video%20dekh%20li%20hai.%20Mujhe%20Expert%20Package%20se%20start%20karna%20hai." 
+               target="_blank" 
+               onclick="fbq('track', 'Lead');"
+               class="inline-flex items-center justify-center w-full md:w-auto px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-extrabold text-lg rounded-2xl shadow-lg shadow-green-500/25 transform hover:-translate-y-1 transition duration-200">
+                <i class="fa-brands fa-whatsapp text-2xl mr-3"></i>
+                JOIN AS FREELANCER & START ON WHATSAPP ➔
+            </a>
+            <p class="text-xs text-gray-500 mt-2">Flexible remote opportunities & timely payouts with zero hassle.</p>
+        </div>
+
+        <!-- Community Join Cards Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+            <a href="https://whatsapp.com/channel/0029VbBlxDxA89Md3m1p9J0Q" target="_blank" class="block text-decoration-none">
+                <div class="bg-gradient-to-r from-green-900/60 to-emerald-900/80 border border-green-500/30 rounded-2xl p-4 flex items-center space-x-3 hover:border-green-400 transition shadow-lg">
+                    <div class="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fa-brands fa-whatsapp text-green-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold text-sm">Richind Beginner's Community 🗣️</h4>
+                        <p class="text-gray-300 text-xs">Join WhatsApp Channel & grow with us</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://t.me/+kDrJFF97AAFkN2Zl" target="_blank" class="block text-decoration-none">
+                <div class="bg-gradient-to-r from-sky-900/60 to-blue-900/80 border border-sky-500/30 rounded-2xl p-4 flex items-center space-x-3 hover:border-sky-400 transition shadow-lg">
+                    <div class="w-10 h-10 bg-sky-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                        <i class="fa-brands fa-telegram text-sky-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold text-sm">Telegram Official Group ✈️</h4>
+                        <p class="text-gray-300 text-xs">Stay updated & connected</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Featured Package Section: EXPERT PACKAGE (BEST RECOMMENDED) -->
+        <div class="my-10 bg-gradient-to-b from-amber-950/40 to-gray-900 border-2 border-amber-500/60 rounded-3xl p-6 relative shadow-2xl shadow-amber-500/20">
+            <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-amber-500 to-yellow-600 text-black text-xs font-black px-4 py-1 rounded-full uppercase tracking-widest shadow-md">
+                🔥 BEST RECOMMENDED PACKAGE
+            </div>
+
+            <div class="mt-2 mb-4 overflow-hidden rounded-2xl border border-amber-500/30 shadow-lg">
+                <img src="https://richind.org/frontend/assets/images/13869612131789934181.png" alt="Expert Package" class="w-full h-auto object-cover">
+            </div>
+            
+            <div class="text-center space-y-2">
+                <h2 class="text-2xl font-bold text-amber-400">EXPERT PACKAGE</h2>
+                <p class="text-gray-300 text-sm">World's Best Courses & Complete Freelance Matching</p>
+                <div class="text-3xl font-extrabold text-white pt-1">
+                    ₹1,149 <span class="text-sm text-gray-400 font-normal line-through">₹2,999</span>
+                </div>
+                <div class="inline-block bg-amber-500/20 text-amber-300 border border-amber-500/40 px-3 py-1 rounded-lg text-xs font-bold">
+                    🚀 Daily Potential Earning: ₹800 se ₹1,600
+                </div>
+            </div>
+
+            <!-- Included Courses List -->
+            <div class="mt-6 bg-black/50 p-4 rounded-xl border border-white/10">
+                <h4 class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-3"><i class="fa-solid fa-graduation-cap mr-1"></i> Included World-Class Courses:</h4>
+                <div class="grid grid-cols-2 gap-2 text-xs text-gray-300">
+                    <div class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> Lead Generation</div>
+                    <div class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> Instagram Mastery</div>
+                    <div class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> Canva with A.I</div>
+                    <div class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> Youtube Success</div>
+                    <div class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> English Speaking</div>
+                    <div class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-2"></i> Step to Success</div>
+                </div>
+            </div>
+
+            <ul class="mt-4 space-y-2.5 text-sm text-gray-300">
+                <li class="flex items-start"><i class="fa-solid fa-circle-check text-amber-400 mt-1 mr-3"></i> <span><strong>Structured Learning:</strong> Step-by-step curriculum by industry mentors</span></li>
+                <li class="flex items-start"><i class="fa-solid fa-circle-check text-amber-400 mt-1 mr-3"></i> <span><strong>Live Doubt Sessions:</strong> Never learn alone with supportive community</span></li>
+                <li class="flex items-start"><i class="fa-solid fa-circle-check text-amber-400 mt-1 mr-3"></i> <span><strong>Abhishek Kumar Mentorship:</strong> Direct Priority Support & Strategy Access</span></li>
+            </ul>
+
+            <div class="mt-6 text-center">
+                <a href="https://wa.me/917654802940?text=Hi%20Abhishek,%20mujhe%20RichIND%20Expert%20Package%20(Rs.1149)%20buy%20karna%20hai." 
+                   target="_blank"
+                   onclick="fbq('track', 'AddToCart');"
+                   class="block w-full py-4 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-black font-extrabold text-base rounded-xl transition duration-200 shadow-xl">
+                    ENROLL IN EXPERT PACKAGE VIA WHATSAPP ➔
+                </a>
+            </div>
+        </div>
+
+        <!-- Lower Alternative Packages (Intermediate & Starter) -->
+        <div class="my-8">
+            <h3 class="text-center text-lg font-bold text-gray-300 mb-6">Aap In Starter Packages Se Bhi Start Kar Sakte Hain:</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Intermediate Package -->
+                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-5 space-y-3 hover:border-gray-700 transition flex flex-col justify-between">
+                    <div>
+                        <div class="overflow-hidden rounded-xl mb-3 border border-gray-800">
+                            <img src="https://richind.org/frontend/assets/images/18998850091789934163.png" alt="Intermediate Package" class="w-full h-auto object-cover">
+                        </div>
+                        <h4 class="text-lg font-bold text-white">INTERMEDIATE PACKAGE</h4>
+                        <p class="text-xs text-gray-400 mt-1">Canva, Video Editing & Growth Foundations</p>
+                        <div class="text-xl font-bold text-amber-400 mt-2">
+                            ₹560 <span class="text-xs text-gray-500 line-through">₹999</span>
+                        </div>
+                        <div class="mt-2 text-xs font-semibold text-green-400 bg-green-500/10 border border-green-500/20 px-2.5 py-1 rounded-md inline-block">
+                            📈 Daily Earning: ₹400 - ₹800
+                        </div>
+                    </div>
+                    <a href="https://wa.me/917654802940?text=Hi%20Abhishek,%20mujhe%20Intermediate%20Package%20(Rs.560)%20se%20start%20karna%20hai." 
+                       target="_blank"
+                       class="block text-center text-xs bg-gray-800 hover:bg-gray-700 text-amber-400 font-bold py-3 rounded-xl border border-amber-500/20 mt-4">
+                        Select Intermediate Package ➔
+                    </a>
+                </div>
+
+                <!-- Starter Package -->
+                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-5 space-y-3 hover:border-gray-700 transition flex flex-col justify-between">
+                    <div>
+                        <div class="overflow-hidden rounded-xl mb-3 border border-gray-800">
+                            <img src="https://richind.org/frontend/assets/images/616392831789934142.png" alt="Starter Package" class="w-full h-auto object-cover">
+                        </div>
+                        <h4 class="text-lg font-bold text-white">STARTER PACKAGE</h4>
+                        <p class="text-xs text-gray-400 mt-1">Basic Digital Skills & Affiliate Foundations</p>
+                        <div class="text-xl font-bold text-amber-400 mt-2">
+                            ₹260 <span class="text-xs text-gray-500 line-through">₹499</span>
+                        </div>
+                        <div class="mt-2 text-xs font-semibold text-green-400 bg-green-500/10 border border-green-500/20 px-2.5 py-1 rounded-md inline-block">
+                            📈 Daily Earning: ₹200 - ₹400
+                        </div>
+                    </div>
+                    <a href="https://wa.me/917654802940?text=Hi%20Abhishek,%20mujhe%20Starter%20Package%20(Rs.260)%20se%20start%20karna%20hai." 
+                       target="_blank"
+                       class="block text-center text-xs bg-gray-800 hover:bg-gray-700 text-amber-400 font-bold py-3 rounded-xl border border-amber-500/20 mt-4">
+                        Select Starter Package ➔
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="my-10 space-y-4">
+            <h3 class="text-xl font-bold text-center text-white mb-4">Frequently Asked Questions</h3>
+            
+            <div class="bg-gray-900 p-4 rounded-xl border border-gray-800 space-y-1">
+                <p class="font-bold text-sm text-amber-400">Q: Kya ye zero investment/free kaam hai?</p>
+                <p class="text-xs text-gray-300">Nahi, ye ek professional skill-learning aur freelance matching platform hai. Courses seekhne aur account active karne ke liye package buy karna mandatory hai.</p>
+            </div>
+
+            <div class="bg-gray-900 p-4 rounded-xl border border-gray-800 space-y-1">
+                <p class="font-bold text-sm text-amber-400">Q: Support kaise milega?</p>
+                <p class="text-xs text-gray-300">Enroll karne ke baad aapko live doubt-solving sessions, peer discussions aur Abhishek Kumar ki direct mentorship milti hai.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-xs text-gray-600 border-t border-gray-900 pt-6 mt-12 space-y-2">
+            <p>© 2026 RichIND Authorized Affiliate Partner (Guided by Abhishek Kumar). All Rights Reserved.</p>
+            <p class="text-[10px]">Founder & CEO: Yash Kulshrestha | Independent affiliate website.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
