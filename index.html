@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Affiliate Marketing - Digital Skills</title>
+<title>Affiliate Marketing</title>
 
-<!-- META PIXEL -->
+<!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -20,178 +20,230 @@ fbq('track','PageView');
 </script>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
+background:#09141e;
+color:#f5f7fa;
 font-family:Arial,sans-serif;
-background:#f8f4ff;
-color:#24133e;
 }
-.hero{
-background:linear-gradient(135deg,#4c1d95,#9333ea,#ec4899);
-color:white;
-text-align:center;
-padding:65px 18px;
-}
-.tag{
-background:#ffffff30;
-padding:10px 18px;
-border-radius:30px;
-display:inline-block;
-}
-h1{
-font-size:38px;
-margin:22px 0;
-}
-.hero p{
-line-height:1.7;
-max-width:650px;
+
+.container{
+max-width:700px;
 margin:auto;
-}
-.section{
-padding:45px 18px;
+padding:30px 20px;
 text-align:center;
 }
-h2{
-font-size:29px;
+
+.logo{
+font-size:43px;
+font-weight:900;
+margin-top:35px;
+letter-spacing:-2px;
+}
+
+.logo span{
+color:#19c5a5;
+}
+
+.subtitle{
+color:#9aaab8;
+letter-spacing:5px;
+font-size:13px;
+margin-top:10px;
+}
+
+.status{
+display:inline-block;
+margin:35px 0 45px;
+padding:13px 25px;
+border:1px solid #263e50;
+border-radius:40px;
+background:#112432;
+color:#20c9aa;
+font-size:14px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+h1{
+font-size:36px;
+line-height:1.35;
+margin-bottom:20px;
+}
+
+.gold{
+color:#e9b84e;
+}
+
+.description{
+font-size:17px;
+line-height:1.7;
+color:#9baab9;
+margin-bottom:30px;
+}
+
+.video-box{
+padding:7px;
+border:1px solid #293e50;
+border-radius:22px;
+background:#111f2c;
+margin:30px 0;
+}
+
+video{
+width:100%;
+display:block;
+border-radius:15px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+margin:30px 0;
+}
+
+.card{
+background:#111f2c;
+border:1px solid #293e50;
+border-radius:22px;
+padding:25px 8px;
+font-size:16px;
+font-weight:bold;
+}
+
+.card span{
+display:block;
+font-size:32px;
+margin-bottom:12px;
+}
+
+.details{
+background:#111f2c;
+border:1px solid #293e50;
+border-radius:22px;
+padding:24px;
+margin:25px 0;
+}
+
+.details h2{
+font-size:24px;
 margin-bottom:15px;
 }
-.video{
-max-width:750px;
-width:100%;
-border:6px solid #a855f7;
-border-radius:20px;
-margin-top:20px;
+
+.details p{
+color:#aab7c3;
+font-size:15px;
+line-height:1.7;
 }
-.skills{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:14px;
-max-width:750px;
-margin:25px auto;
-}
-.skill{
-padding:22px 10px;
-border-radius:17px;
-background:white;
-box-shadow:0 5px 18px #00000012;
-font-weight:bold;
-}
-.skill:nth-child(2n){background:#ffe4f1}
-.skill:nth-child(3n){background:#eee4ff}
-.info{
-background:white;
-max-width:750px;
-margin:20px auto;
-padding:25px;
-border-radius:20px;
-line-height:1.8;
-}
-.whatsapp-section{
-background:linear-gradient(135deg,#581c87,#be185d);
-color:white;
-padding:55px 15px;
-text-align:center;
-}
+
 .whatsapp{
-display:inline-block;
-margin-top:25px;
-background:#16c75a;
-color:white;
-padding:17px 30px;
-border-radius:50px;
-font-size:19px;
-font-weight:bold;
+display:block;
+margin:35px 0 20px;
+padding:22px 12px;
+border-radius:60px;
+background:linear-gradient(100deg,#20d5ae,#079b84);
+color:#041c19;
 text-decoration:none;
-box-shadow:0 0 12px #22c55e,0 0 30px #22c55e;
+font-size:21px;
+font-weight:900;
+box-shadow:0 0 15px #20d5ae,0 0 35px #20d5ae77;
 animation:glow 1.5s infinite alternate;
 }
+
 @keyframes glow{
-from{box-shadow:0 0 10px #22c55e}
-to{box-shadow:0 0 30px #22c55e,0 0 45px #22c55e}
+from{box-shadow:0 0 12px #20d5ae;}
+to{box-shadow:0 0 30px #20d5ae,0 0 45px #20d5ae88;}
 }
-footer{
-padding:20px;
-text-align:center;
-font-size:12px;
-color:#777;
-}
-@media(max-width:500px){
-h1{font-size:30px}
-.skills{grid-template-columns:1fr 1fr}
+
+@media(max-width:480px){
+.container{padding:20px 17px;}
+.logo{font-size:40px;}
+h1{font-size:30px;}
+.description{font-size:16px;}
+.card{font-size:14px;}
 }
 </style>
 </head>
 
 <body>
 
-<div class="hero">
-<div class="tag">DIGITAL SKILLS & ONLINE BUSINESS</div>
+<div class="container">
 
-<h1>Learn Digital Skills & Affiliate Marketing</h1>
-
-<p>
-Explore digital skills, understand affiliate marketing
-and learn how an online business works.
-Watch the introduction video and get complete details.
-</p>
+<div class="logo">
+Affiliate<span>Marketing</span>
 </div>
 
-<div class="section">
-<h2>Watch Introduction Video</h2>
+<div class="subtitle">
+DIGITAL SKILLS PROGRAM
+</div>
 
-<video class="video" controls playsinline>
+<div class="status">
+● PROGRAM DETAILS
+</div>
+
+<h1>
+Learn <span class="gold">Affiliate Marketing</span>
+With Digital Skills
+</h1>
+
+<p class="description">
+Explore the program and understand the learning process.
+</p>
+
+<!-- INTRO VIDEO -->
+<div class="video-box">
+<video controls playsinline preload="metadata">
 <source src="intro-video.mp4" type="video/mp4">
 </video>
 </div>
 
-<div class="section">
-<h2>Explore Digital Skills</h2>
+<div class="grid">
 
-<div class="skills">
-<div class="skill">📣 Lead Generation</div>
-<div class="skill">📱 Instagram Mastery</div>
-<div class="skill">🤝 Affiliate Marketing</div>
-<div class="skill">💬 English Speaking</div>
-<div class="skill">🎯 Meta Ads</div>
-<div class="skill">🔎 Google Ads</div>
-<div class="skill">🎨 Graphic Designing</div>
-<div class="skill">🤖 AI Tools</div>
-</div>
+<div class="card">
+<span>💰</span>
+Affiliate Marketing
 </div>
 
-<div class="section">
-<div class="info">
-<h2>About Richind Program</h2>
+<div class="card">
+<span>📋</span>
+Lead Generation
+</div>
+
+<div class="card">
+<span>📱</span>
+Instagram Mastery
+</div>
+
+<div class="card">
+<span>🎯</span>
+Digital Skills
+</div>
+
+</div>
+
+<div class="details">
+<h2>Richind <span class="gold">Program</span></h2>
 <p>
-Richind provides digital learning courses and
-skill development programs. Explore available
-courses, understand the learning process and
-get information about packages and fees.
-
-Course details, pricing and terms can be
-confirmed before enrolment.
-
-Results depend on individual skills, effort
-and market conditions. Income is not guaranteed.
+Explore available courses, course details,
+learning process and packages.
 </p>
 </div>
-</div>
-
-<div class="whatsapp-section">
-<h2>Want Complete Details?</h2>
-<p>Connect with us on WhatsApp to know more.</p>
 
 <a class="whatsapp"
-href="https://wa.me/918822498887?text=Hello%2C%20mujhe%20Affiliate%20Marketing%20program%20ki%20details%20chahiye."
+href="https://wa.me/918822498887?text=Hello%2C%20mujhe%20Affiliate%20Marketing%20ki%20details%20chahiye."
 target="_blank"
+rel="noopener"
 onclick="if(typeof fbq==='function')fbq('track','Contact')">
-💬 Chat on WhatsApp
+✈ WhatsApp Now
 </a>
-</div>
 
-<footer>
-Digital Skills & Affiliate Marketing Learning Program
-</footer>
+</div>
 
 </body>
 </html>
